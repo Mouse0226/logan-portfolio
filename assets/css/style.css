@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #91e6fc;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+header {
+    display: flex;
+    padding: 20px 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* image credit: unsplash.com user @Walkator */
+    background-image: url(../images/hero-banner.jpg);
+    background-size: cover;
+}
+header h1 {
+    color: var(--primary-color);
+}
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+header nav {
+    margin: 11px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    
+}
