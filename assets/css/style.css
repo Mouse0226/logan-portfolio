@@ -9,6 +9,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
 }
+/* Header Section Start*/
 header {
     display: flex;
     padding: 20px 35px;
@@ -20,10 +21,13 @@ header {
 }
 header h1 {
     color: var(--primary-color);
+    font-size: 36px;
 }
 header a {
     text-decoration: none;
     color: var(--primary-color);
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header nav {
     margin: 11px 0;
@@ -38,6 +42,30 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
 }
+/* Header Section End */
+/* Banner/Hero Section Start */
+.banner-first {
+    padding: 15px;
+    /* image credit: unsplash.com user @rosellastudio */
+    background-image: url(../images/banner-back.jpg);
+    background-size: cover;
+}
+.banner-first h2 {
+    font-family: cursive;
+    font-style: italic;
+    color: #000000;
+    text-shadow: 0 0 10px rgba(82, 82, 82, 0.25);
+}
+.banner-last {
+    padding: 15px;
+    text-align: right;
+    background-color: black;
+}
+.banner-last h2 {
+    font-family: monospace;
+    color: #00ff37;
+}
+/* Banner/Hero Section End */
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
@@ -66,5 +94,7 @@ header nav ul li a {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    
+    .banner {
+        font-size: 80%;
+    }
 }
