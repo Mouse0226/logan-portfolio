@@ -5,7 +5,8 @@
 }
 :root {
     --primary-color: #ffffff;
-    --secondary-color: #0f942c;
+    --secondary-color: #00ff37;
+    --tertiary-color: #000000;
 }
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -39,6 +40,7 @@ header nav ul {
     align-items: center;
     justify-content: space-between;
     list-style: none;
+    font-size: 1.5vw;
 }
 header nav ul li a {
     padding: 10px 15px;
@@ -47,7 +49,7 @@ header nav ul li a {
 /* Banner/Hero Section Start */
 .banner {
     display: flex;
-    background-color: black;
+    background-color: var(--tertiary-color);
     justify-content: space-between;
 }
 .banner-first {
@@ -55,15 +57,47 @@ header nav ul li a {
     padding: 15px;
     background-size: cover;
     font-family: Garamond;
-    color: white;
+    color:var(--primary-color);
 }
 .banner-last {
     margin: 9px 0;
     padding: 15px;
     font-family: monospace;
-    color: #00ff37;
+    text-align: right;
+    color: var(--secondary-color);
 }
 /* Banner/Hero Section End */
+/* About Me Section Begin */
+.about-me {
+    background: var(--primary-color);
+    display: flex;
+    margin-top: 10px;
+}
+.flex-row {
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+.about-me-text {
+    border-left: 3px solid;
+    border-color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+.profile {
+    margin: 10px;
+    border: 3px solid;
+    padding-bottom: 0px;
+    border-color: var(--tertiary-color);
+    flex: 50%;
+}
+.profile img {
+    height: 100%;
+    width: 100%;
+}
+
+/* About Me Section End */
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
@@ -90,7 +124,24 @@ header nav ul li a {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    
+    .about-me {
+        flex-wrap: wrap;
+    }
+    .flex-row {
+        width: 100%;
+    }
+    .flex-row {
+        width: 100%;
+        border-bottom: 3px solid;
+        border-color: var(--secondary-color);
+        margin: 10px 0px;
+    }
+    .about-me-text {
+        border-left: none;
+    }
+    .profile {
+        flex: 100%
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
