@@ -114,6 +114,17 @@ header nav ul li a {
 .most-recent-text p {
     font-size: 16px;
 }
+.secondary-work {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.default-work-card {
+    background-image: url(../images/construction.jpg);
+    background-size: cover;
+}
 
 /* My Work Section End */
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
