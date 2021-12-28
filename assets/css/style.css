@@ -80,8 +80,6 @@ header nav ul li a {
     text-align: center;
 }
 .about-me-text {
-    border-left: 3px solid;
-    border-color: var(--secondary-color);
     text-align: center;
     padding: 20px;
     margin: auto;
@@ -98,7 +96,7 @@ header nav ul li a {
     display: flex;
 }
 .most-recent {
-    width: 100%;
+    width: 120em;
     padding: 240px 70px 40px 0px;
     margin-right: 10px;
     background-image: url(../images/run-buddy.PNG);
@@ -147,13 +145,14 @@ header nav ul li a {
     .about-me {
         flex-wrap: wrap;
     }
+    .my-work {
+        flex-wrap: wrap;
+    }
     .flex-row {
         width: 100%;
     }
     .flex-row {
         width: 100%;
-        border-bottom: 3px solid;
-        border-color: var(--secondary-color);
         margin: 10px 0px;
     }
     .about-me-text {
