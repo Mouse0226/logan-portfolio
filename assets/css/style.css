@@ -38,12 +38,14 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     list-style: none;
     font-size: 1.75vw;
 }
 header nav ul li a {
     padding: 10px 15px;
+}
+header nav ul li a:hover {
+    background-color: var(--tertiary-color);
 }
 /* Header Section End */
 /* Banner/Hero Section Start */
@@ -108,6 +110,10 @@ header nav ul li a {
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
 }
+.work-card-text a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
 .work-card-text h3 {
     font-size: 24px;
 }
@@ -125,14 +131,57 @@ header nav ul li a {
     justify-content: space-around;
 }
 .default-work-card {
+    margin: 10px;
     padding: 200px 200px 10px 0px;
     /* image credit to unsplash.com user @popnzebra */
     background-image: url(../images/construction.jpg);
     background-size: cover;
     background-position: bottom;
 }
-
 /* My Work Section End */
+/* Contact Me Section Start */
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--tertiary-color);
+    padding: 40px 35px;
+    width: 100%;
+}
+.contact-me h2 {
+    padding-top: 11px;
+    font-size: 24px;
+    color: var(--primary-color);
+    margin: 0;
+}
+.contact-me a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.contact-me ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.75vw;
+}
+.contact-me ul li {
+    padding: 10px 15px;
+}
+.contact-me ul li a:hover {
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+}
+/* Contact Me Section End */
+/* Utility Start */
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+    transform: scale(1.2); 
+}
+/* Utility End */
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
@@ -153,6 +202,23 @@ header nav ul li a {
         justify-content: center;
     }
     header nav ul li a {
+        font-size: 20px;
+    }
+    .contact-me {
+        padding: 20px 35px;
+        justify-content: center;
+        position: relative;
+    }
+    .contact-me h2 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .contact-me ul {
+        width: 100%;
+        justify-content: center;
+    }
+    .contact-me ul li a {
         font-size: 20px;
     }
 }
@@ -195,5 +261,8 @@ header nav ul li a {
     .banner-last {
         margin: 0px;
         padding: 5px;
+    }
+    .default-work-card {
+        width: 100%;
     }
 }
