@@ -102,17 +102,20 @@ header nav ul li a {
     background-image: url(../images/run-buddy.PNG);
     background-size: cover;
 }
-.most-recent-text {
-    width: 10em;
+.work-card-text {
+    width: 15em;
     font-family: monospace;
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
 }
-.most-recent-text h3 {
+.work-card-text h3 {
     font-size: 24px;
 }
-.most-recent-text p {
+.work-card-text p {
     font-size: 16px;
+}
+.secondary {
+    margin: 10px;
 }
 .secondary-work {
     width: 100%;
@@ -122,8 +125,11 @@ header nav ul li a {
     justify-content: space-around;
 }
 .default-work-card {
+    padding: 200px 200px 10px 0px;
+    /* image credit to unsplash.com user @popnzebra */
     background-image: url(../images/construction.jpg);
     background-size: cover;
+    background-position: bottom;
 }
 
 /* My Work Section End */
