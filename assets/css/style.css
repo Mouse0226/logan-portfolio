@@ -57,7 +57,6 @@ header nav ul li a:hover {
 .banner-first {
     margin: 5px 0;
     padding: 15px;
-    background-size: cover;
     font-family: Garamond;
     color:var(--primary-color);
 }
@@ -65,15 +64,12 @@ header nav ul li a:hover {
     margin: 9px 0;
     padding: 15px;
     font-family: monospace;
-    text-align: right;
     color: var(--secondary-color);
 }
 /* Banner/Hero Section End */
 /* About Me Section Begin */
 .about-me {
-    background: var(--primary-color);
     display: flex;
-    margin-top: 10px;
 }
 .flex-row {
     width: 35%;
@@ -89,8 +85,6 @@ header nav ul li a:hover {
 .profile {
     margin: 10px;
     display: flex;
-    padding-bottom: 0px;
-    flex: 1;
 }
 /* About Me Section End */
 /* My Work Section Begin */
@@ -124,8 +118,6 @@ header nav ul li a:hover {
     margin: 10px;
 }
 .secondary-work {
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -146,11 +138,9 @@ header nav ul li a:hover {
     justify-content: space-between;
     background: var(--tertiary-color);
     padding: 40px 35px;
-    width: 100%;
 }
 .contact-me h2 {
     padding-top: 11px;
-    font-size: 24px;
     color: var(--primary-color);
     margin: 0;
 }
@@ -160,9 +150,6 @@ header nav ul li a:hover {
 }
 .contact-me ul {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
     list-style: none;
     font-size: 1.75vw;
 }
@@ -199,6 +186,7 @@ header nav ul li a:hover {
     }
     header nav ul {
         width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
     }
     header nav ul li a {
