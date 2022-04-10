@@ -95,7 +95,7 @@ header nav ul li a:hover {
     width: 120em;
     padding: 240px 70px 40px 0px;
     margin-right: 10px;
-    background-image: url(../images/peregrinate.PNG);
+    background-image: url(../images/quest-board.PNG);
     background-size: cover;
 }
 .work-card-text {
@@ -126,6 +126,13 @@ header nav ul li a:hover {
     margin: 10px;
     padding: 200px 200px 10px 0px;
     background-image: url(../images/run-buddy.PNG);
+    background-size: cover;
+    background-position: bottom;
+}
+.tertiary-work-card {
+    margin: 10px;
+    padding: 200px 200px 10px 0px;
+    background-image: url(../images/peregrinate.PNG);
     background-size: cover;
     background-position: bottom;
 }
