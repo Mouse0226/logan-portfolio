@@ -136,6 +136,13 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: bottom;
 }
+.quaternary-work-card {
+    margin: 10px;
+    padding: 200px 200px 10px 0px;
+    background-image: url(../images/wordy.png);
+    background-size: cover;
+    background-position: bottom;
+}
 .default-work-card {
     margin: 10px;
     padding: 200px 200px 10px 0px;
